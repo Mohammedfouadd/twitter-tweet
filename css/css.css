@@ -1,0 +1,309 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+        line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    }
+    body{
+        font-family: "cairo", sans-serif;
+
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    /* global */
+    .maiNuser{
+        margin-bottom: 20px;
+        display: flex;
+    cursor: pointer;
+
+    }
+     .maiNuser img{
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    .neme{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+    }
+
+    .icons{
+        display: flex;
+        justify-content:space-evenly;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(235, 208, 208, 0.521);
+        padding-bottom: 10px;
+    }
+    .icons i {
+        padding: 5px;
+        font-size: 20px;
+        color: #777;
+        cursor: pointer;
+    }
+    .icons i:hover{
+        color: rgb(23, 131, 255);
+        background-color: rgba(119, 119, 119, 0.13);
+        border-radius: 50%;
+        
+    }
+
+    /* global */
+    
+    .container{
+        display: flex;
+        margin:10px auto;
+        justify-content: center;
+    }
+    .container .header{
+        width: 250px;
+       
+        
+    }
+    /* .container .header:not(:last-chald){
+        color: blue;
+    } */
+
+    .container .header i{
+        font-size: 30px;
+        color: rgb(23, 131, 255);
+    cursor: pointer;
+    
+
+    }
+
+    .container .header .seting{
+        margin: 30px 0;
+       
+    }
+    
+
+    .container .header .seting span{
+        font-size: 25px;
+        margin-left: 15px;
+    cursor: pointer;
+
+    }
+    .container .header .seting i{
+        color: black;
+        font-size: 25px;
+
+       
+    }
+    /* main */
+
+    .container .main{
+        border: 1px solid rgb(235, 208, 208);
+        border-bottom: none;
+        border-top: none;
+        padding: 10px 15px;
+        width: 600px;
+    }
+
+    .container .main .head{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .container .main .head h3{
+        margin-left: 30px;
+    }
+    
+    
+    .container .main .content .maiNuser .neme span:first-child{
+        font-weight: bold;
+    }
+    .container .main .content .maiNuser .neme span:last-child{
+        color: #777;
+    }
+
+    .container .main .content .post p{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .container .main .content .post .time{
+        margin-bottom: 20px;
+        border-bottom: 1px solid rgba(235, 208, 208, 0.521);
+        padding-bottom: 20px;
+        color: #777;
+    }
+    .container .main .content .post .Watch{
+        display: flex;
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba(235, 208, 208, 0.521);
+        padding-bottom: 16px ;
+
+
+    }
+    .container .main .content .post .Watch div{
+        margin-right: 10px;
+        color: #777;
+        font-size: 15px;
+    }
+    .container .main .content .post .Watch div span{
+        font-weight: bold;
+        color: black;
+    }
+
+    
+    
+    .container .sidebar{
+        margin-left: 30px;
+        width: 350px;
+    }
+    @media (max-width: 799px) {
+        .container .sidebar{
+          display: none;
+
+
+        }
+        .container .header{
+          display: none;
+
+        }
+      }
+    
+    .container .sidebar .head{
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 30px;
+        background-color: #eee;
+    }
+    .container .sidebar .head i {
+        color: #777;
+        
+    }
+    .container .sidebar .head .search{
+        border: none;
+        outline: none;
+        background-color: #eee;
+        margin-left: 10px;
+
+    }
+
+    .container .sidebar .contacts{
+        border: 1px solid rgba(235, 208, 208, 0.521);
+        border-radius: 5px ;
+        margin-top: 10px;
+    }
+    .container .sidebar .contacts h3{
+        font-weight: bold;
+        font-size: 25px;
+        padding: 10px;
+    }
+    .container .sidebar .contacts p{
+        font-size: 15px;
+        padding: 0 10px;
+
+    }
+    .container .sidebar .contacts .sign{
+        margin: 10px;
+    
+
+    }
+    .container .sidebar .contacts .sign p{
+        font-size: 12px;
+    }
+
+    .container .sidebar .contacts .sign .sinup{
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        border: 1px solid rgba(235, 208, 208, 0.521);
+        margin-bottom: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+
+    }
+    .container .sidebar .contacts .sign .sinup h4{
+        margin-left: 10px;
+    }
+
+    .container .sidebar .contacts .sign .sinup:hover{
+        background-color: #eee;
+    }
+
+    .sidebar .contacts .relev{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .sidebar .contacts .relev .span{
+        background-color: black;
+        color: white;
+        height: fit-content;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .sidebar .contacts .p{
+       margin: 0 94px;
+       margin-bottom: 10px ;
+      
+    }
+
+    footer{
+        background-color: rgb(23, 131, 255);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+    }
+    footer .foot{
+        margin-left: 170px;
+    }
+    footer .buttons{
+        display: flex;
+       align-items: center;
+    }
+    footer .buttons span{
+        border: 1px solid;
+        margin: 10px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: bold;
+    }
+    footer .buttons span:last-child{
+        background-color: white;
+        color: black;
+        border: none;
+    }
+    footer .buttons span:hover{
+        background-color: rgba(162, 195, 233, 0.363);
+
+    }
+
+    footer .buttons span:last-child:hover{
+        background-color: #eee;
+
+    }
+
+
+
+    @media (max-width: 799px) {
+        footer .foot{
+            margin-left: 0;
+        }
+        footer{
+            flex-direction:column;
+        }
+        footer .buttons{
+            justify-content: space-evenly;
+        }
+      }
+      
